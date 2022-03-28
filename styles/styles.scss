@@ -526,13 +526,12 @@ section {
     transform: scale(1);
 }
 
-//Contact
 .contact-content-con{
     display: flex;
-    padding-top: 3.5rem;
-    flex: 2;
+    flex-direction: column;
+    padding: 3.5rem 8rem;
     h4{
-        margin-top: 1rem;
+        margin: 1rem 0;
         font-size: 2rem;
         text-transform: uppercase;
     }
