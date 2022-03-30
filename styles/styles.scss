@@ -68,6 +68,16 @@ section {
     transition: var(--transition1);
 }
 
+//Separator line
+.sep-line{
+    width: 60%;
+    height: 1px;
+    margin: 1rem 0;
+    background-color: var(--color-control-bg);
+    // margin-left: 1rem;
+    position: relative;
+}
+
 .active {
     display: block;
     animation: appearSec 1s ease-in-out both;
@@ -80,7 +90,6 @@ section {
         }
     }
 }
-
 
 //Controls
 .controls{
@@ -207,52 +216,6 @@ section {
     }
 }
 
-.btn-con {
-    display: flex;
-}
-
-.main-btn {
-    border-radius: 30px;
-    color: inherit;
-    font-weight: 600;
-    position: relative;
-    border: 1px solid var(--color-secondary);
-    display: flex;
-    align-self: flex-start;
-    align-items: center;
-    overflow: hidden;
-
-    .btn-text {
-        padding: 0 2rem;
-        width: 185px;
-    }
-    .btn-icon {
-        background-color: var(--color-secondary);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        padding: 1rem;
-    }
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translateX(100%);
-        transition: var(--transition1);
-        z-index: -1;
-    }
-    &:hover {
-        &::before {
-            width: 100%;
-            height: 100%;
-            background-color: var(--color-secondary);
-            transform: translateX(0);
-        }
-    }
-}
-
 .main-title {
     text-align: center;
     text-transform: uppercase;
@@ -279,6 +242,10 @@ section {
 
 // About
 .about-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 3.5rem;
+    padding-bottom: 5rem;
     .left-about{
         padding-right: 5rem;
         p{
@@ -290,10 +257,6 @@ section {
             text-transform: uppercase;
         }
     }
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding-top: 3.5rem;
-    padding-bottom: 5rem;
     .right-about {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -398,55 +361,55 @@ section {
     }
 }
 
-.timeline{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
-    padding-bottom: 3rem;
-    .timeline-item{
-        position: relative;
-        padding-left: 3rem;
-        border-left: 1px solid var(--color-bg-items);
-        .tl-icon{
-            position: absolute;
-            left: -27px;
-            top: 0;
-            background-color: var(--color-secondary);
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            i{
-                font-size: 1.3rem;
-            }
-        }
-        .tl-duration{
-            padding: .2rem .6rem;
-            background-color: var(--color-bg-items);
-            border-radius: 15px;
-            display: inline-block;
-            font-size: .8rem;
-            text-transform: uppercase;
-            font-weight: 500;
-        }
-        h5{
-            padding: 1rem 0;
-            text-transform: uppercase;
-            font-size: 1.3rem;
-            font-weight: 600;
-            span{
-                color: var(--color-s-text);
-                font-weight: 500;
-                font-size: 1.2rem;
-            }
-        }
-        p{
-            color: var(--color-s-text);
-        }
-    }
-}
+// .timeline{
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     grid-gap: 2rem;
+//     padding-bottom: 3rem;
+//     .timeline-item{
+//         position: relative;
+//         padding-left: 3rem;
+//         border-left: 1px solid var(--color-bg-items);
+//         .tl-icon{
+//             position: absolute;
+//             left: -27px;
+//             top: 0;
+//             background-color: var(--color-secondary);
+//             width: 50px;
+//             height: 50px;
+//             border-radius: 50%;
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//             i{
+//                 font-size: 1.3rem;
+//             }
+//         }
+//         .tl-duration{
+//             padding: .2rem .6rem;
+//             background-color: var(--color-bg-items);
+//             border-radius: 15px;
+//             display: inline-block;
+//             font-size: .8rem;
+//             text-transform: uppercase;
+//             font-weight: 500;
+//         }
+//         h5{
+//             padding: 1rem 0;
+//             text-transform: uppercase;
+//             font-size: 1.3rem;
+//             font-weight: 600;
+//             span{
+//                 color: var(--color-s-text);
+//                 font-weight: 500;
+//                 font-size: 1.2rem;
+//             }
+//         }
+//         p{
+//             color: var(--color-s-text);
+//         }
+//     }
+// }
 
 //Portfolio
 .port-text{
@@ -529,34 +492,35 @@ section {
 .contact-content-con{
     display: flex;
     flex-direction: column;
-    padding: 3.5rem 8rem;
+    padding: 3.5rem 10%;
     h4{
         margin: 1rem 0;
         font-size: 2rem;
         text-transform: uppercase;
     }
-    p{
-        margin: 1rem 0;
-        line-height: 2rem;
-        color: var(--color-s-text);
-    }
     .contact-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         .contact-item{
             display: flex;
-            align-items: center;
+            width: 100%;
+            // grid-template-columns: 1fr 3fr;
+            // align-items: center;
             justify-content: space-between;
-            p{
-                margin: .3rem 0;
-                padding: 0;
-            }
             .icon{
                 display: grid;
-                grid-template-columns: 40px 1fr;
+                grid-template-columns: 40px auto;
                 i{
                     display: flex;
                     align-items: center;
                     font-size: 1.3rem;
                 }
+            }
+            p{
+                text-align: right;
+                // margin: .3rem 0;
+                // padding: 0;
             }
         }
     }
