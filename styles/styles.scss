@@ -106,9 +106,9 @@ section {
         padding: 1rem;
         cursor: pointer;
         background-color: var(--color-control-bg);
-        width: 55px;
-        height: 55px;
-        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        border-radius: 10%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -132,9 +132,9 @@ section {
 .theme-btn{
     top: 5%;
     right: 3%;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
     background-color: var(--color-control-bg);
     cursor: pointer;
     position: fixed;
