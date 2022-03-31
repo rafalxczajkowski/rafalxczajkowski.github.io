@@ -11,7 +11,7 @@
     --color-secondary: #00aba9;
     --color-text: #fff;
     --color-img-bg: #000;
-    --color-s-text: #c9ced4;//#dbe1e8;
+    --color-s-text: #c9ced4;
     --color-icon: #b2becd;
     --color-control-bg: #454e56;
     --color-bg-items: #2a2e35;
@@ -357,6 +357,56 @@ section {
                     }
                 }
             }
+        }
+    }
+}
+
+.timeline{
+    display: grid;
+    width: 400px;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    .timeline-item{
+        position: relative;
+        padding: 0 0 2rem 3rem;
+        border-left: 1px solid var(--color-bg-items);
+        .tl-icon{
+            position: absolute;
+            left: -27px;
+            top: 0;
+            background-color: var(--color-secondary);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i{
+                font-size: 1.3rem;
+            }
+        }
+        .tl-duration{
+            padding: .2rem .6rem;
+            background-color: var(--color-bg-items);
+            border-radius: var(--border-radius);
+            display: inline-block;
+            font-size: .8rem;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        h5{
+            padding: 0.4rem 0;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            font-weight: 600;
+            span{
+                color: var(--color-s-text);
+                font-weight: 500;
+                font-size: 1.2rem;
+            }
+        }
+        p{
+            color: var(--color-s-text);
         }
     }
 }
