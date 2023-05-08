@@ -74,7 +74,6 @@ section {
     height: 1px;
     margin: 1rem 0;
     background-color: var(--color-control-bg);
-    // margin-left: 1rem;
     position: relative;
 }
 
@@ -172,9 +171,6 @@ section {
             top: 0;
             z-index: -1;
             clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-            // clip-path: inset(0% 0% 0% 0% round 0%);
-
-
         }
         .image{
             border-radius: var(--border-radius);
