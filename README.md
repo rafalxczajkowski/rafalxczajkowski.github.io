@@ -2,7 +2,7 @@
 
 ## Description
 
-Portfolio website made usuing HTML, CSS, Sass and JavaScript.
+Portfolio website made using HTML, CSS, Sass and JavaScript.
 
 ## Usage
 
