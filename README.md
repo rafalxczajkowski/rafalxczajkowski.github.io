@@ -4,7 +4,13 @@
 
 Portfolio website made using HTML, CSS, Sass and JavaScript.
 
-## Usage
-
+## Installation
 1. Clone the repository.
-2. Open index.html
+
+## Usage
+1. Open the application in your browser by opening index.html
+
+or  
+
+1. Visit app here:  
+https://rafalxczajkowski.github.io/
