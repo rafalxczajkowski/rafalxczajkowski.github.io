@@ -22,19 +22,8 @@ themeBtn.addEventListener('click', () => {
   }
 })
 
-//skill-bar bars width - HTML, CSS, JS, TS, React, Node, Git, Heroku, Python, SQL
-let skillPerc = [
-  '40%',
-  '40%',
-  '35%',
-  '30%',
-  '30%',
-  '30%',
-  '30%',
-  '25%',
-  '25%',
-  '15%',
-]
+//skill-bar bars width - HTML, CSS, JS, Python, React, Node, Git, Azure/Heroku, SQL
+let skillPerc = ['40%', '40%', '35%', '30%', '30%', '30%', '30%', '25%', '15%']
 let skillBars = document.getElementsByClassName('skill')
 for (let i in skillPerc) {
   skillBars[i].style.width = skillPerc[i]

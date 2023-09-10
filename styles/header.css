@@ -10,7 +10,6 @@
     justify-content: center;
     .person-image-container {
       width: 400px;
-      /* margin-left: 20%; */
       transition: var(--transition1);
       .mask-blob {
         background-color: var(--color-secondary);
