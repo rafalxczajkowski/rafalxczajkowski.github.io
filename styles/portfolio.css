@@ -57,17 +57,17 @@
           margin: 0 1rem;
           cursor: pointer;
           transition: var(--transition1);
+          i {
+            font-size: 1.5rem;
+            color: var(--color-text);
+            margin: 0 1rem;
+          }
         }
         .icon:hover {
           background-color: var(--color-text);
           i {
             color: var(--color-primary);
           }
-        }
-        i {
-          font-size: 1.5rem;
-          color: var(--color-text);
-          margin: 0 1rem;
         }
       }
     }

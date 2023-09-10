@@ -121,7 +121,7 @@ section {
       color: var(--color-secondary);
     }
   }
-  .bg-text {
+  .background-text {
     position: relative;
     color: var(--color-bg-items);
     z-index: -1;

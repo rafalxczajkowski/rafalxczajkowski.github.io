@@ -1,5 +1,5 @@
 @media screen and (max-width: 1400px) {
-  /* .contact-content-con {
+  /* .contact-content-container {
     flex-direction: column;
     .right-contact {
       margin-left: 0;
@@ -19,57 +19,53 @@
 }
 
 @media screen and (max-width: 1040px) {
-  .about-container {
-    grid-template-columns: 1fr;
-    .right-about {
-      padding-top: 2.5rem;
-    }
-  }
-  .about-stats .progress-bars {
-    grid-template-columns: 1fr;
-  }
   .portfolios {
     grid-template-columns: 1fr 1fr;
   }
-  /* .section .main-title {
-    h2 {
+  .main-title {
+    h2.front-text {
       font-size: 3.3rem;
     }
-    .bg-text {
+    h3.background-text {
       font-size: 4.7rem;
-    }
-  } */
-}
-
-@media screen and (max-width: 900px) {
-  .main-title {
-    h2 {
-      font-size: 12px;
-    }
-    .bg-text {
-      font-size: 3.6rem;
     }
   }
 }
 
-@media screen and (max-width: 800px) {
-  /* .main-title {
-    h2 {
+@media screen and (max-width: 900px) {
+  .header-content {
+    .left-header .person-image-container {
+      width: 250px;
+    }
+    .right-header {
+      .introduction {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+  .main-title {
+    h2.front-text {
       font-size: 2.7rem;
     }
-    .bg-text {
+    h3.background-text {
       font-size: 3.6rem;
     }
-  } */
+  }
+  .about-skills .skill-elements {
+    grid-template-columns: 1fr;
+  }
+}
 
-  /* .header-content .left-header .person-image-container {
-    width: 300px;
-  } */
-  /* .right-header { */
-  /* border: 10px solid blue; */
-  /* } */
-
-  .contact-content-con .contact-info .contact-item {
+@media screen and (max-width: 750px) {
+  .header-content {
+    .left-header .person-image-container {
+      width: 200px;
+    }
+  }
+  .contact-content-container .contact-info .contact-item {
     flex-direction: column;
     .contact-data {
       text-align: left;
@@ -85,13 +81,10 @@
     grid-template-columns: 1fr;
     padding-bottom: 6rem;
     .left-header {
+      align-items: flex-start;
       padding-top: 1rem;
-      .h-shape {
-        display: none;
-      }
-      .image {
+      .person-image-container {
         margin: 0 auto;
-        width: 50%;
       }
     }
     .right-header {
@@ -99,9 +92,6 @@
       grid-row: 1;
       width: 90%;
       margin: 0 auto;
-      .introduction {
-        font-size: 2.5rem;
-      }
     }
   }
   .about-container {
@@ -130,21 +120,40 @@
     padding-bottom: 6rem;
   }
   .main-title {
-    h2 {
-      font-size: 2rem;
+    h2.front-text {
+      font-size: 2.4rem;
     }
-    .bg-text {
+    h3.background-text {
       font-size: 3rem;
     }
   }
   .section {
     padding: 2rem 2.5rem;
   }
-  .theme-btn {
-    width: 50px;
-    height: 50px;
+  div.theme-btn {
+    width: 40px;
+    height: 40px;
+    i {
+      font-size: 1.2rem;
+    }
   }
-  .controls {
+  div.controls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey5);
+    .control {
+      margin: 0.6rem 0.6rem;
+    }
+  }
+}
+
+@media screen and (max-height: 460px) {
+  div.controls {
     top: auto;
     bottom: 0;
     flex-direction: row;

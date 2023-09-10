@@ -22,7 +22,7 @@ themeBtn.addEventListener('click', () => {
   }
 })
 
-//Progress bars width - HTML, CSS, JS, TS, React, Node, Git, Heroku, Python, SQL
+//skill-bar bars width - HTML, CSS, JS, TS, React, Node, Git, Heroku, Python, SQL
 let skillPerc = [
   '40%',
   '40%',
@@ -36,7 +36,6 @@ let skillPerc = [
   '15%',
 ]
 let skillBars = document.getElementsByClassName('skill')
-let bartexts = document.getElementsByClassName('prog-text')
 for (let i in skillPerc) {
   skillBars[i].style.width = skillPerc[i]
 }

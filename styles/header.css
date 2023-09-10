@@ -4,14 +4,13 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   min-height: 100vh;
-  /* border: 2px solid orange; */
   .left-header {
     display: flex;
     align-items: center;
     justify-content: center;
     .person-image-container {
       width: 400px;
-      margin-left: 20%;
+      /* margin-left: 20%; */
       transition: var(--transition1);
       .mask-blob {
         background-color: var(--color-secondary);
@@ -21,7 +20,8 @@
         img {
           width: 100%;
           height: 100%;
-          translate: 0px 20px;
+          z-index: 30;
+          translate: 0px 15px;
           transition: var(--transition1);
           filter: grayscale(1);
         }
@@ -32,7 +32,6 @@
     }
   }
   .right-header {
-    /* border: 2px solid blueviolet; */
     display: flex;
     flex-direction: column;
     justify-content: center;
