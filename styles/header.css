@@ -1,4 +1,4 @@
-@import 'variables.css';
+/* @import 'variables.css'; */
 
 .header-content {
   display: grid;
@@ -16,7 +16,10 @@
         mask-image: url(../img/blob-haikei.png);
         mask-repeat: no-repeat;
         mask-size: 100%;
-        img {
+        -webkit-mask-image: url(../img/blob-haikei.png);
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-size: 100%;
+        & img {
           width: 100%;
           height: 100%;
           z-index: 30;
@@ -24,7 +27,7 @@
           transition: var(--transition1);
           filter: grayscale(1);
         }
-        img:hover {
+        & img:hover {
           filter: grayscale(0);
         }
       }
@@ -37,11 +40,11 @@
     padding-right: 10%;
     .introduction {
       font-size: 2rem;
-      span {
+      & span {
         color: var(--color-secondary);
       }
     }
-    p {
+    & p {
       margin: 1.5rem 0;
       line-height: 2rem;
       color: var(--color-s-text);
