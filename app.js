@@ -33,7 +33,7 @@ let skillPerc = [
   '30%',
   '25%',
   '25%',
-  '15%',
+  '25%',
 ]
 let skillBars = document.getElementsByClassName('skill')
 for (let i in skillPerc) {
