@@ -1,10 +1,10 @@
-@import 'variables.css';
+/* @import 'variables.css'; */
 
 .contact-content-container {
   display: flex;
   flex-direction: column;
   padding: 3.5rem 5%;
-  h4 {
+  & h4 {
     margin: 1rem 0;
     font-size: 2rem;
     text-transform: uppercase;
@@ -20,13 +20,13 @@
       .icon {
         display: grid;
         grid-template-columns: 40px auto;
-        i {
+        & i {
           display: flex;
           align-items: center;
           font-size: 1.3rem;
         }
       }
-      p {
+      & p {
         text-align: right;
       }
     }
@@ -34,7 +34,7 @@
   .contact-icon {
     display: flex;
     margin-top: 2rem;
-    a {
+    & a {
       display: flex;
       align-items: center;
       color: var(--color-text);
@@ -46,16 +46,16 @@
       border-radius: 10%;
       margin: 0 0.4rem;
       transition: var(--transition1);
-      i {
+      & i {
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 1.4rem;
       }
     }
-    a:hover {
+    & a:hover {
       background-color: var(--color-secondary);
-      i {
+      & i {
         color: var(--color-primary);
       }
     }
